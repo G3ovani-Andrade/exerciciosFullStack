@@ -1,0 +1,17 @@
+public class CalcularPercentual {
+    //Mudar o nome da função para calcularPercentual
+    // mudar os nomes das variáveis para padronizar os parâmetros com p_ ou pNomeVariavel
+    //p_valorBase e p_percentual
+    // retornar diretamente o cálculo dentro da função return p_valorBase*(p_percentual/100);
+    public static void Main(String[] args)
+    {
+        System.out.println("Valor percentual: " + processo(120,20));
+    }
+    public static double processo(double x, double y)
+    {
+        double resultado = 0;
+        resultado = x * (y/100);
+        return resultado;
+    }
+
+}

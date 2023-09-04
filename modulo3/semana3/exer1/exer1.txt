@@ -1,0 +1,7 @@
+Fullcycle – profissional criado para abranger todos as áreas do ciclo de vida de um sistema, para ele não importa se o sistema está em uma certa linguagem ou tecnologia, ele está ligado com o produto e não com as áreas. Por isso o profissional de full stack acompanha o produto desde a coleta dos requisitos até a fase de monitoramento.
+O Profissional full stack pensa a frente na arquitetura e desenvolvimento pois esta focado na entrega do produto e esta ligado as fases de :
+    • Arquitetura
+    • Desenvolvimento
+    • Teste
+    • Deploy
+    • Monitoramento

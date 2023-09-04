@@ -1,0 +1,4 @@
+o principio da responsabilidade única diz que uma classe não deve ter mais 
+de uma responsabilidade, como uma classe produto com métodos de persistência 
+incluídos dentro da classe. A forma correta de se fazer seria ter uma classe 
+apenas para persistência de dados.

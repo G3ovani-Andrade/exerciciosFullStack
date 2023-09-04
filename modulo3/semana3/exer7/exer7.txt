@@ -1,0 +1,3 @@
+Deploy é a fase onde colocamos o que está sendo desenvolvido(produção) para ser disponibilizado para os usuários. 
+Deployment Manual – onde as atualizações são feitas de forma manual pela equipe, conta com um maior controle, mas podem ocorrer erros humanos quando atualizados os arquivos.
+ Deployment Automatizado – conta com o uso de ferramentas para automatizar o processo, gerando assim maior eficiência, consistência e menos chance de erros.

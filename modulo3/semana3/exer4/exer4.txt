@@ -1,0 +1,2 @@
+BackEnd é a parte do sistema responsável pela lógica de negócio, processando requisições do frontEnd e fazendo requisições do banco de dados ou Api e retornando para o frontEnd essas informações.
+Podemos citar como linguagens backEnd o python, java, ruby, node.js, cada um com suas particularidades como OO e tipagem de dados.

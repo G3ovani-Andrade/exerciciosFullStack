@@ -1,0 +1,3 @@
+Arquitetura de software – conceber e planejar a estrutura essencial de um sistema, é nesse processo que decidimos como os componentes do sistema vão se relacionar entre si, escolha de tecnologias a serem usadas, como os dados serão armazenados, componentização do sistema e documentação do sistema.
+Arquitetura monolítica – Onde todo o sistema é um único componente, arquitetura simples, mas difícil de escalar e fazer manutenção,
+Arquitetura de microsserviços – Sistema dividido em pequenos serviços independentes, fácil de escalar e de fácil manutenção, mas de gerenciamento difícil.

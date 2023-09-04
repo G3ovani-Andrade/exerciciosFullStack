@@ -1,0 +1,4 @@
+O desenvolvedor fontEnd é responsável pela parte visual do site, que interage com o usuário de forma direta. As tecnologias mais usadas são html, css, javascript, typescript, vue, angular e react. 
+Html é responsável pela estrutura dos sites, composto por tags que completam as páginas web e de aplicativos.
+Css é responsável pela estilização das tags que compõe o html, como cor espaçamento e margens.
+Javascript é responsável por gerar animações e funcionalidades as páginas e aplicativos web.

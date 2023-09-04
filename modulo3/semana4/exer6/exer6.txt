@@ -1,0 +1,3 @@
+Squad 1 -Analista de regra de negocio, dev frontEnd, dev backEnd,dba,designer.
+Squad 2 -Analista de sistemas, dev fullCycle,dev frontEnd, tester,derente de projetos
+Squad 3 - Analista de regrade negocio,tester,engenheiro de software, teste, dba.

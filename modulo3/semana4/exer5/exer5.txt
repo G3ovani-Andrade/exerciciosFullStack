@@ -1,0 +1,4 @@
+Os logs de ERROR podem ocorrer quando existe uma falha de comunicação 
+com o banco de dados que esta sendo usado ou um problema sério no aplicativo
+ que gere uma exceção no sistema, também podemos
+ citar as falhas de configuração como logs do tipo ERROR

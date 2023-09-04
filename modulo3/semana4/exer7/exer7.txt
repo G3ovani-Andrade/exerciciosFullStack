@@ -1,0 +1,17 @@
+Squad 1 -Analista de regra de negócio, dev frontEnd, dev backEnd,dba,dev fullStack.
+Squad 2 -Analista de sistemas, dev fullCycle,dev frontEnd, tester, gerente de projetos
+Squad 3 - Analista de regra de negócio,tester,engenheiro de software,dev frontEnd, dba.
+
+Chapters:
+squad 1 -dev frontEnd, dev backEnd,dev fullStack
+squad 2 - 
+	chapter 1 dev fullCycle e dev frontEnd
+	chapter 2 analista de sistemas e gerente de projetos
+squad 3 - analista de sistemas e um engenheiro de software
+Tribes:
+	tribes 1 - o dev frontEnd, dev fullStack e o backEnd 
+	tribes 2 - Analista de regra de negócio e dba
+Guilds:
+guild 1 analista de sistemas,analista de regra de negocio,engenheiro de software e gerente de projetos.
+guild 2 dev frontEnd, tester, dba
+guild 3 dev frontEnd, dev backEnd,dev fullStack, tester e dba.

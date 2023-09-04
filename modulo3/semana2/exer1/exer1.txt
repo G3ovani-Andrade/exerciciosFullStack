@@ -1,0 +1,4 @@
+Permite um código mais confiável, de fácil manutenção e melhor estruturado.
+Permite assegurar a qualidade do produto e seu funcionamento correto.
+Reduz custo de manutenção corretiva e retrabalho.
+Tornará você um desenvolvedor melhor, ajudando a estruturar melhor o código implementado.

@@ -1,0 +1,31 @@
+public class TaxaServico {
+    //Vamos criar variáveis globais para guardar as taxas que retornaram do banco de dados
+    //precisaremos também criar os métodos que irão buscar as taxas no banco de dados
+    //Exemplo:public static int _taxaServico = taxaServicoBd();
+    //faremos isso para todos as taxas
+    // vamos substituir os valores fixos dentro dos métodos e usar as variáveis de escopo global
+    // podemos também criar um método que receba uma string e verifique o tipo de serviço necessário e retorne as taxas
+    public static void main(String[] args) {
+
+    }
+    public static int ServClasseD(){
+        //substituir os valores fixos pelas variáveis criadas no escopo global
+        //TaxaServ + Hosp
+        return 10+200;
+    }
+
+    public static int ServClasseC(){
+        //TaxaServ + Hosp + Cafe + Almoço
+        return 10+350+30+70;
+    }
+    public static int ServClasseB(){
+        //TaxaServ + Hosp + Cafe + Almoço + Janta
+        return 10+350+30+70+80;
+    }
+
+    public static int ServClasseA(){
+        //TaxaServ + Hosp + Cafe + Almoço + Janta + VIP
+        return 10+350+30+70+80+500;
+    }
+}
+
