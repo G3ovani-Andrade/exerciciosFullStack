@@ -1,0 +1,42 @@
+<div class="container w-75 mt-5 pb-3 bg-primary bg-opacity-10 rounded-2">
+  <div class="row">
+    <div class="col m-auto">
+      <img class="col-12" src="assets/disciplinas.png" alt="">
+    </div>
+  <form class="col">
+    <div class="mb-3">
+      <input-box identificador="nome" tipo="text" nome="nome" titulo="Nome" classLabel="form-label"
+        classInput="form-control"></input-box>
+    </div>
+    <div class="mb-3">
+      <input-box identificador="cargaHoraria" tipo="number" nome="cargaHoraria" titulo="Carga Horaria"
+        classLabel="form-label" classInput="form-control"></input-box>
+    </div>
+    <div class="mb-3">
+      <input-box identificador="escola" tipo="text" nome="nomeEscola" titulo="Escola" classLabel="form-label"
+        classInput="form-control"></input-box>
+    </div>
+    <div class="mb-3">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Professor(a)</option>
+        <option value="otavio">Otávio</option>
+        <option value="carla">Carla</option>
+        <option value="leandro">Leandro</option>
+        <option value="claudia">Claudia</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-check-label"><b>Matéria é opcional?</b></label>
+      <div class="form-check">
+        <input-box identificador="sim" tipo="radio" nome="materia" titulo="Sim" classLabel="form-check-label"
+          classInput="form-check-input"></input-box>
+      </div>
+      <div class="form-check">
+        <input-box identificador="nao" tipo="radio" nome="materia" titulo="Não" classLabel="form-check-label"
+          classInput="form-check-input"></input-box>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary col-3 text-center">Submit</button>
+  </form>
+</div>
+</div>

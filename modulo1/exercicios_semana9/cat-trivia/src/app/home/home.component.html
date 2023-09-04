@@ -1,0 +1,15 @@
+<div class="container w-50 m-auto mt-5 text-center pb-5">
+  <div>
+    <p>{{ fact?.text }}</p>
+  </div>
+  <div>
+    <img [src]="srcImagem?.file" *ngIf="imgBoolean" class="rounded img-fluid" alt="">
+  </div>
+  <div>
+    <img [src]="srcGif?.file" *ngIf="gifBoolean" class="rounded img-fluid" alt="">
+  </div>
+  <div class="mt-4">
+    <button class="btn btn-primary me-2" (click)="imagem()">Imagem</button>
+    <button class="btn btn-primary" (click)="gif()" >Gif</button>
+  </div>
+</div>

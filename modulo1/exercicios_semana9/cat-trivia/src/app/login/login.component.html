@@ -1,0 +1,20 @@
+<div class="container mt-5 w-50">
+  <form (ngSubmit)="login()" #loginForm="ngForm" >
+    <div class="mb-3">
+      <label for="usuario" class="form-label">Usuario</label>
+      <input type="text" name="usuario" class="form-control" [(ngModel)]="loginFormModel.usuario" [(ngModel)]="usuario" id="usuario" />
+    </div>
+    <div class="mb-3">
+      <label for="senhaLogin" class="form-label">Senha</label>
+      <input type="password" name="senha" class="form-control" [(ngModel)]="loginFormModel.senha" [(ngModel)]="senha" id="senhaLogin" />
+    </div>
+    <div class="mb-3">
+      <label for="confirmarSenha" class="form-label">Confirme sua senha</label>
+      <input type="password" name="confirmaSenha" class="form-control" [(ngModel)]="loginFormModel.confirmaSenha" [(ngModel)]="confirmaSenha" id="confirmarSenha" />
+      <p class="mt-2 text-center text-danger">{{mensagem}}</p>
+    </div>
+    <div class="text-center mt-2">
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </div>
+  </form>
+</div>

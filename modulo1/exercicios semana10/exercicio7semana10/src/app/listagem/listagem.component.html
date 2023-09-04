@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col" *ngFor="let item of listaHttp;index as i">
+            <div class="card" [routerLink]="['/detalhamento/',item.forms[0].name]">
+                <img [src]="item.sprites.other['official-artwork'].front_default " class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.name}}</h5>
+                    <p class="card-text">{{ item.url}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

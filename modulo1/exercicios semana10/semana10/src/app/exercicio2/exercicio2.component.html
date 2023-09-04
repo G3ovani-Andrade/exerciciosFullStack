@@ -1,0 +1,12 @@
+<div class="container mt-4 pb-4">
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+    <div class="col" *ngFor="let personagem of arrayFotos">
+      <div class="card h-100">
+        <img [src]="personagem.url" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{personagem.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

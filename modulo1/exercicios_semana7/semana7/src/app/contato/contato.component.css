@@ -1,0 +1,19 @@
+h1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.contato{
+    margin: 0 auto;
+    text-align: center;
+    background: wheat;
+    padding-top: 3rem;
+}
+button + button{
+    margin: 5px;
+}
+img{
+    margin-bottom: 3em;
+}
+#botoes{
+    padding-bottom: 3em;
+}

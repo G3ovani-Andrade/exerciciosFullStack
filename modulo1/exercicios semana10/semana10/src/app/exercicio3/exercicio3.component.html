@@ -1,0 +1,17 @@
+<div class="container mt-3 text-center">
+  <div class="card m-auto">
+    <a (click)="showModal = !showModal">Open Demo Modal</a>
+  </div>
+
+  <div class="modal" *ngIf="showModal">
+    <div class="modal__content">
+      <h1>Example modal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
+        libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
+        voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!
+      </p>
+      <a class="modal__close" (click)="showModal = !showModal">×</a>
+    </div>
+  </div>
+</div>

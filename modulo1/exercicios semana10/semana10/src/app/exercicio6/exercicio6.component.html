@@ -1,0 +1,13 @@
+<div class="container mt-3 text-center">
+  <div class="card m-auto">
+    <a (click)="showModal = !showModal">Open Demo Modal</a>
+  </div>
+
+  <div class="modal" *ngIf="showModal">
+    <div class="modal__content">
+      <h1>Example modal</h1>
+        <ng-content></ng-content>
+      <a class="modal__close" (click)="showModal = !showModal">×</a>
+    </div>
+  </div>
+</div>

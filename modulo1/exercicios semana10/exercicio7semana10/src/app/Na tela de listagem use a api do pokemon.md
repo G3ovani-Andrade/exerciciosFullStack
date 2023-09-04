@@ -1,0 +1,2 @@
+Na tela de listagem use a api do pokemon (https://pokeapi.co/ ) para listar apenas os 20 primeiros pokemos. Crie um service para fazer essa comunicação.
+No card de informação deverá ter o nome do pokemon e a imagem (o caminho de acesso ate a chave da imagem é sprites.other.official-artwork.front_default ).

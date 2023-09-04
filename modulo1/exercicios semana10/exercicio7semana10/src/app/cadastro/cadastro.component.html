@@ -1,0 +1,31 @@
+<div class="container w-50 mt-4 m-auto">
+    <form (ngSubmit)="cadastrar()" #loginForm="ngForm">
+        <div class="form-floating mb-3">
+            <input type="text"  name="usuario" class="form-control"  [ngClass]="{'is-invalid':!loginFormModel.usuario.length && loginForm.submitted}" [(ngModel)]="loginFormModel.usuario" id="usuario" placeholder="Usuario">
+            <label for="usuario">Nome usuário</label>
+            <div *ngIf="loginForm.submitted" class="text-danger">
+                <p *ngIf="!loginFormModel.usuario.length">Usuário não pode ser vazio</p>
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="password" class="form-control" name="confimarSenha" (keyup)="checar()" [ngClass]="{'is-invalid':!confimarSenha.length && loginForm.submitted}" [(ngModel)]="confimarSenha" id="confimarSenha"  placeholder="Senha">
+            <label for="confimarSenha">Senha</label>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="password" class="form-control" name="senha" (keyup)="checar()" [ngClass]="{'is-invalid':!loginFormModel.senha.length && loginForm.submitted}" [(ngModel)]="loginFormModel.senha" id="senha"  placeholder="Senha">
+            <label for="senha">Confirmar Senha</label>
+            <div *ngIf="loginForm.submitted" class="text-danger">
+                <p *ngIf="!loginFormModel.senha.length" class="mb-0">senha não pode ser vazia</p>
+                <p *ngIf="loginFormModel.senha.length" class="mb-0" >{{ mensagem }}</p>
+                <p class="mb-0" *ngIf="!numero">1 número</p>
+                <p class="mb-0" *ngIf="!maiuscula">1 letra maiúscula</p>
+                <p class="mb-0" *ngIf="!minuscula">1 letra minúscula</p>
+                <p class="mb-0" *ngIf="!especial">1 caractere especial</p>
+                <p class="mb-0" *ngIf="loginFormModel.senha.length<8">8 caracteres</p>
+            </div>
+        </div>
+        <div class="form-floating  mb-3 text-center">
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+        </div>
+    </form>
+</div>
