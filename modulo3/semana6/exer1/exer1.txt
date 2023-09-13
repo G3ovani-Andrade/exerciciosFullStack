@@ -1,0 +1,5 @@
+SaaS - Software as a Service - É quando o projeto é um serviço em si, e o usuário não precisa instalar, fazer manutenção ou atualizar o
+softaware.Dropbox e Microsoft 360.
+PaaS - Platadorm as a Service - fornece a infraestrutura e um ambiente de desenvolvimento que inclui hardware,SO,networking e aplicativos,
+suprindo a necessidade dos desenvolvedores para que criem e testem seus aplicativos sem se preocupar com a infraestrutura.Heroku,Azure app server e Google app engine.
+IaaS - infraestrutura as a Service - Serviço em nuvem que fornece ferramentas necessárias para criar uma infraestrutura virtual para a nossa aplicação. AWS,Azure e GCP.

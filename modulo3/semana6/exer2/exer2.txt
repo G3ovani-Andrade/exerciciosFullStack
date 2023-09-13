@@ -1,0 +1,3 @@
+Plública - modelo no qual a infraestrutura e serviços são gerenciados por um provedor terceirizado e compartilhado entre várias organizações usando a internet pública.
+Privada(On Premises) - modelo no qual a infraestrutura é dedicada a uma única organização.
+Híbrida - modelo no qual a infraestrutura e composta por no mínimo uma nuvem privada e uma pública que trabalham juntas.
