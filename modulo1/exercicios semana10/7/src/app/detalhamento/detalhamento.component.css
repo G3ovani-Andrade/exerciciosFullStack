@@ -1,0 +1,11 @@
+.card{
+  margin: auto;
+  border: solid;
+  border-radius: 10px;
+  flex-direction: row;
+}
+.caracteristicas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

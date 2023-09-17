@@ -1,0 +1,25 @@
+<div class="container w-50 mt-5 m-auto">
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+        <div class="form-floating mb-3 ">
+            <input type="text"  name="usuario" class="form-control"  [ngClass]="{'is-invalid':!loginFormModel.usuario.length && loginForm.submitted}" [(ngModel)]="loginFormModel.usuario" id="usuario" placeholder="Usuario">
+            <label for="usuario">Nome usuário</label>
+            <div *ngIf="loginForm.submitted" class="text-danger">
+                <p *ngIf="!loginFormModel.usuario.length">Usuário não pode ser vazio</p>
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="password" class="form-control" name="senha" (keyup)="checar()" [ngClass]="{'is-invalid':!loginFormModel.senha.length && loginForm.submitted}" [(ngModel)]="loginFormModel.senha" id="senha"  placeholder="Senha">
+            <label for="senha">Senha</label>
+            <div *ngIf="loginForm.submitted" class="text-danger">
+                <p *ngIf="!loginFormModel.senha.length" class="mb-0">senha não pode ser vazio</p>
+                <p *ngIf="loginFormModel.senha.length" class="mb-0">{{ mensagem }}</p>
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+          <a routerLink="/cadastro">Ainda não possiu cadastro?</a>
+        </div>
+        <div class="form-floating  mb-3 text-center">
+            <button type="submit" class="btn btn-success">Entrar</button>
+        </div>
+    </form>
+</div>
