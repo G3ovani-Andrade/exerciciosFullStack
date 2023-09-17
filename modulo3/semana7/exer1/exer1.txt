@@ -1,0 +1,5 @@
+Defina a diferença entre Spring e Spring Boot?
+A principal diferneça entra os dois seria a parte de configuração,antes se gastava 
+mais tempo na parte de configuracao de projetos do que codificando uma aplicação de fato.
+Poid o spring necessita de configuração manual para seu funcionamento e o spring boot oferece configurações
+automaticas para facilitar o desenvolvimento. 
