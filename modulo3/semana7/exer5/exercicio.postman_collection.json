@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "26dc5a12-9a62-448b-a806-9a7de8d588c4",
+		"name": "exercicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28099569"
+	},
+	"item": [
+		{
+			"name": "buscar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/medico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"ricardo almeida\",\r\n    \"email\":\"augusto@gmail.com\",\r\n    \"telefone\":\"(00) 0 0000-0000\",\r\n    \"crm\":\"101010\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/medico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/medico/5c4c9332-839e-4304-97c6-c8dbe1fc8aed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico",
+						"5c4c9332-839e-4304-97c6-c8dbe1fc8aed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"ricardo ivanildo\",\r\n    \"email\":\"augusto@gmail.com\",\r\n    \"telefone\":\"(00) 0 0000-0000\",\r\n    \"crm\":\"101020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/medico/5c4c9332-839e-4304-97c6-c8dbe1fc8aed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico",
+						"5c4c9332-839e-4304-97c6-c8dbe1fc8aed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/medico/b30d0e7e-feac-4689-aae9-09851ac84cc6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medico",
+						"b30d0e7e-feac-4689-aae9-09851ac84cc6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
