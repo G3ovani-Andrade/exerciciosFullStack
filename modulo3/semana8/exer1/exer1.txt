@@ -4,3 +4,5 @@ compilação e testes que são executados automaticamente a cada alteração e i
 CD Entrega Contínua (Continuous Delivery) e Implantação Contínua (Continuous Deployment) - O código após passar pelo CI estão prontas para a
 implantação que seria a parte de entrega e implantação do software, a entrega pode sera manual, onde a decisão de implantar se da pelo responsável da implantação ou
 automática, onde assim que o código é verificado pelo CI é automaticamente implantado.
+
+vantagens = Menor chance de erro humano, entregas mais rapidas. maior qualidade de software,maior confiabilidade entre outras vantagens
