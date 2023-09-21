@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
       this.mensagem = 'Usuário ou senha inválido'
     }else{
       this.rotas.navigate(['/listagem'])
-    }
+   }
 
   }
 

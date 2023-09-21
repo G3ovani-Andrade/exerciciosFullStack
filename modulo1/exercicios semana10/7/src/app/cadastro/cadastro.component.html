@@ -1,31 +1,43 @@
 <div class="container w-50 mt-4 m-auto">
-    <form (ngSubmit)="cadastrar()" [formGroup]="cadastroForm" #cadForm='ngForm'>
-        <div class="form-floating mb-3">
-            <input type="text"  name="usuario" class="form-control"  [ngClass]="{'is-invalid':cadastroForm.get('nome_usuario')?.errors && cadForm.submitted}" formControlName="nome_usuario" id="usuario" placeholder="Usuario">
-            <label for="usuario">Nome usuário</label>
-            <div *ngIf="" class="text-danger">
-                <p *ngIf="!loginFormModel.usuario.length">Usuário não pode ser vazio</p>
-            </div>
-        </div>
-        <div class="form-floating  mb-3">
-            <input type="password" class="form-control" name="confimarSenha"  [ngClass]="{'is-invalid':cadastroForm.get('confirmacao_senha')?.errors && cadForm.submitted && cadForm.submitted}" formControlName="confirmacao_senha" id="confimarSenha"  placeholder="Senha">
-            <label for="confimarSenha">Senha</label>
-        </div>
-        <div class="form-floating  mb-3">
-            <input type="password" class="form-control" name="senha" [ngClass]="{'is-invalid':cadastroForm.get('senha')?.errors && cadForm.submitted}" formControlName="senha" id="senha"  placeholder="Senha">
-            <label for="senha">Confirmar Senha</label>
-            <div *ngIf="cadastroForm.get('nome_usuario')?.errors && cadForm.submitted" class="text-danger">
-                <p *ngIf="!loginFormModel.senha.length" class="mb-0">senha não pode ser vazia</p>
-                <p *ngIf="loginFormModel.senha.length" class="mb-0" >{{ mensagem }}</p>
-                <p class="mb-0" *ngIf="!numero">1 número</p>
-                <p class="mb-0" *ngIf="!maiuscula">1 letra maiúscula</p>
-                <p class="mb-0" *ngIf="!minuscula">1 letra minúscula</p>
-                <p class="mb-0" *ngIf="!especial">1 caractere especial</p>
-                <p class="mb-0" *ngIf="loginFormModel.senha.length<8">8 caracteres</p>
-            </div>
-        </div>
-        <div class="form-floating  mb-3 text-center">
-            <button type="submit" class="btn btn-success" [disabled]="!cadastroForm.valid" >Cadastrar</button>
-        </div>
-    </form>
+  <form (ngSubmit)="cadastrar()" [formGroup]="cadastroForm" #cadForm='ngForm'>
+    <div class="form-floating mb-3">
+      <input type="text" name="usuario" class="form-control"
+        [ngClass]="{'is-invalid':cadastroForm.get('usuario')?.invalid && cadastroForm.get('usuario')?.value.length>1}" formControlName="usuario"
+        id="usuario" placeholder="Usuario">
+      <label for="usuario">Nome usuário</label>
+    </div>
+
+    <div class="form-floating  mb-3">
+      <input type="password" class="form-control" name="senha"
+        [ngClass]="{'is-invalid':cadastroForm.get('senha')?.invalid && cadastroForm.get('senha')?.value.length>=8}"
+        formControlName="senha" id="senha" placeholder="Senha">
+      <label for="senha">Senha</label>
+    </div>
+
+    <div class="form-floating  mb-3">
+      <input type="password" class="form-control" name="confirmacao_senha"
+        [ngClass]="{'is-invalid':cadastroForm.get('confirmacao_senha')?.invalid && cadastroForm.get('confirmacao_senha')?.value.length>=8}"
+        formControlName="confirmacao_senha" id="confirmacao_senha" placeholder="confirmar senha">
+      <label for="confirmacao_senha">Confirmar Senha</label>
+    </div>
+    <div class="text-danger">
+      <div *ngIf="(cadastroForm.get('senha')?.getError('senhaValidaRetorno') && cadastroForm.get('senha')?.value.length>=8) ||
+         (cadastroForm.get('confirmacao_senha')?.getError('senhaValidaRetorno') && cadastroForm.get('confirmacao_senha')?.value.length>=8)">
+        <p class="mb-0" >mínimo 8 caracteres </p>
+        <p class="mb-0" >1 letra maiúscula</p>
+        <p class="mb-0" >1 letra minúscula </p>
+        <p class="mb-0" >1 caractere especial</p>
+        <p class="mb-0" >1 número</p>
+      </div>
+      <div class="text-danger" *ngIf="cadastroForm.get('senha')?.getError('senhaCorrespondente') || cadastroForm.get('confirmacao_senha')?.getError('senhaCorrespondente')">
+        <p class="mb-0" >As senhas devem ser iguais</p>
+      </div>
+      <div class="text-danger" *ngIf="cadastroForm.get('usuario')?.getError('usuarioExiste')">
+        <p class="mb-0" >usuario já existe</p>
+      </div>
+    </div>
+    <div class="form-floating  mb-3 text-center">
+      <button type="submit" class="btn btn-success" [disabled]="!cadastroForm.valid">Cadastrar</button>
+    </div>
+  </form>
 </div>
